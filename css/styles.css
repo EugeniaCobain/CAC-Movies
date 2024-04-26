@@ -409,7 +409,7 @@ footer {
 }
 .seccion_registro{
     background-color: rgb(42, 42, 42);
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     margin-bottom: 50px;
     border-radius: 20px;
@@ -483,7 +483,7 @@ footer {
 /* PÁGINA INICIAR SESIÓN */
 .seccion_sesion{
     display: flex;
-    padding: 100px 40px;
+    padding: 100px 20px;
 }
 
 

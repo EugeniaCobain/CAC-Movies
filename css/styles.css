@@ -1,0 +1,893 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+}
+
+/* ESTILOS GENERALES */
+/* Estilos de los enlaces */
+a{
+    text-decoration: none;
+    color: #f3f3f3;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+
+/* Estilos de títulos */
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+
+/* Línea separadora */
+hr {
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/* PÁGINAS INDEX Y MARIOBROS */
+/* Estilos generales */
+/* Body */
+body{
+    background-color:#161516;
+    color: #f3f3f3;
+}
+
+/* Header */
+.header_index{
+    width: 100%;
+    height: 10vh;
+    position:sticky;
+    top:0;
+    padding: 10px;
+    z-index: 1000;
+    background-color: rgb(159, 54, 71);
+}
+.menu{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+.menu_logo{
+    font-size:1.2rem;
+    
+}
+.menu_logo:hover{
+    animation: shake 0.5s infinite linear;
+}
+@keyframes shake {
+    0%{transform: translate(0, 0) rotate(0deg);}
+    25% {transform: translate(5px, 5px) rotate(5deg);}
+    50% {transform: translate(0, 0) rotate(0eg);}
+    75% {transform: translate(-5px, 5px) rotate(-5deg);}
+    100% {transform: translate(0, 0) rotate(0deg);}
+  }
+.menu_list{
+    display: flex;
+    gap: 25px;
+    background-color: ;
+}
+.menu_list_item, .footer_nav li{
+    font-size:1.2rem;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+}
+.menu_list_item:hover, .footer_nav li:hover, .destacado:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.destacado{
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+.destacado:hover{
+    background-color: #9f3647;
+}
+
+/* Footer */
+footer {
+    background-color: #9f3647;
+    color: #ffffff;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_nav{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+}
+.flecha{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* PÁGINA INDEX */
+/* Sección Banner */
+.banner{
+    height: 90vh;
+    background: linear-gradient(to bottom, #000000a3, #000000a3), url("../assets/fondos/fondoindex.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.banner_container{
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.banner_container h1 {
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.banner_container h2{
+    font-size: 2.5rem;
+    line-height: .7;
+    margin-bottom: 30px;
+}
+.banner_container button{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background-color: #9f3647;
+    border-color: #9f3647;
+    color: #f3f3f3;
+    font-weight: bold;
+    transition: all 0.5s ease-out;
+}
+.banner_container button:hover{
+    box-shadow: 0px 0px 10px  rgba(255, 255, 255, 0.621);
+    transform: scale(.95)
+}
+
+/* Sección buscador */
+.buscador{
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buscador h2{
+    font-size: 2.5rem;
+}
+#buscar{
+    border: 2px solid white;
+    border-radius: 25px;
+    color: #000000;
+    font-size: 1.2rem;
+    height: 50px;
+    margin: 20px 0px;
+    padding: 0px 20px;
+    width: 500px;
+    background-color: #f3f3f3;
+}
+.buscador_form_boton{
+    background-color: #9f3647;
+    color: #ffffff;
+    height: 50px;
+    margin: 20px 10px;
+    padding: 0 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid white;
+    text-align: center;
+    transition: all 0.5s ease-out;
+}
+.buscador_form_boton:hover, .tendencia_boton:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Sección Tendencias */
+.tendencia{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+.tendencia_gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 50px;
+}
+.tendencia_img{
+        width: 250px;
+        height: 350px;
+        border-radius: 10px;
+        position: relative;
+        overflow:hidden;
+        transition: all 0.5s ease-out;
+}
+.tendencia_titulo{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);  
+    opacity:0;
+    display: flex;
+}
+.tendencia_titulo h4{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: auto;
+}
+.tendencia_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.tendencia_img:hover{
+    box-shadow: 0px 0px 40px  rgba(159, 54, 71,0.621);
+    transform: scale(.8);   
+}
+.tendencia_img:hover>.tendencia_titulo{
+    backdrop-filter: blur(8px);  
+    opacity:1;
+}
+.tendencia_boton{
+    border: 1px solid white;
+    box-sizing: content-box;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #9f3647;
+    color: #ffffff;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 60px;
+    transition: 0.3s;
+}
+.tendencia_boton{
+    overflow-x: visible;
+}
+
+/* Sección Aclamadas */
+.aclamadas{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.aclamadas_gallery{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-top: 50px;
+    column-gap: 30px;
+}
+.aclamadas_gallery::-webkit-scrollbar{
+    width: 7px;
+}
+.aclamadas_gallery::-webkit-scrollbar-thumb{
+    background: #9f3647;
+    border-radius: 5px;
+}
+.aclamadas_gallery div{
+    width: 200px;
+    height: 300px;
+    flex-shrink: 0;
+    box-shadow: 10px 10px 47px -45px rgba(255,255,255,0.29);
+}
+.aclamadas_gallery div img{
+    border-radius: 5%;
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+
+/* PÁGINA MARIOBROS */
+/* Sección Sinopsis */
+.sinopsis{
+    padding-top: 50px;
+    background: linear-gradient(to right top, #6d6969a7, #6d6969a7), url(../assets/fondos/fondomario.jpg);
+    background-size: cover;
+    background-position: center;  
+    height: 80vh;
+}
+.sinopsis_container{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+.sinopsis_imagen img{
+    border-radius: 20px;
+    width: 100%;
+}
+.sinopsis_texto > h3{
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+.sinopsis_creditos{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sección Trailer */
+.trailer{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+}
+.trailer_description{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+}
+.trailer_redes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+.trailer_container > h3{
+    font-size: 1.8rem;
+}
+.trailer_info{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4.1fr);
+    font-size: 1.3rem;
+    gap:20px;
+    margin-top: 40px;
+}
+.trailer_info p:nth-child(2n-1){
+    font-weight: bold;
+}
+
+
+/* PÁGINAS REGISTRO Y SESIÓN */
+/* Estilos generales */
+/* Body */
+.body_registro{
+    background: url(../assets/fondos/fondoregistro.jpg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "header header header"
+    "main main main ";
+}
+/* Header */
+.header_registro{
+    grid-area: header;
+    color: #ffffff;
+    height: 10vh;
+    padding: 30px;
+    font-size:1.2rem;
+}
+
+/* PÁGINA REGISTRO */
+.main_registro{
+    grid-area: main;
+}
+.seccion_registro{
+    background-color: rgb(42, 42, 42);
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}    
+.seccion_registro form{
+    width: 100%;
+    padding: 30px 40px;
+}
+.seccion_registro form>h2{
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+[type="text"], [type="email"], [type="password"],[type="date"] {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 2px solid #9f3647;
+    background-color: #333333;
+    color:  #787878;;
+}
+#pais{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 2px solid #9f3647;
+    background-color: #333333;
+    color: #787878;  
+}
+.form-check{
+    display:flex;
+    gap: 20px;
+    font-size: 1rem;
+    margin: 15px 30px 30px;
+}
+#flexCheckDefault{
+    width: 20px;
+}
+.boton_registro{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    background-color: #9f3647;
+    border: 2px solid #9f3647;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500; 
+}
+.boton_registro:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);  
+}
+.ayuda{
+    margin-bottom: 50px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #787878;
+    font-weight: 400;
+}
+
+/* PÁGINA INICIAR SESIÓN */
+.seccion_sesion{
+    display: flex;
+    padding: 100px 40px;
+}
+
+
+
+/* RESPONSIVE */
+@media (min-width: 769px) and (max-width:992px){
+    /* HEADER INDEX y MARIOBROS */
+    .menu_logo{
+        font-size:1rem;
+    }
+    .menu_list_item, .footer_nav li{
+        font-size:1rem;
+    }
+
+    /* FOOTER INDEX Y MARIOBROS */
+    footer {
+        padding: 25px;
+    }
+    .footer_nav{
+        gap: 0px;
+    }  
+
+    /* TÍTULOS */
+    h1{
+        font-size: 2.5rem;
+    }
+    
+    h2{
+        font-size: 1.8rem;
+    }
+    
+    /* PÁGINA ÍNDEX */
+    /* Sección Banner */
+    .banner_container h2{
+        font-weight: 400;
+    }
+    /* Sección Buscador */
+    .buscador{
+        padding: 100px;
+    }
+    .buscador h2{
+        margin-bottom: 20px;
+    }   
+    #buscar{
+        margin: 15px 0px;
+        padding: 0 20px;
+        width: 400px
+    }
+    .buscador_form_boton{
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    /* PÁGINA MARIOBROS */
+    /* Sección Sinopsis */
+    .sinopsis{
+        height: initial;
+        padding: 20px 0;
+    }
+    .sinopsis_container{
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        column-gap: 20px;
+    }
+    .sinopsis_imagen{
+        width: 30%;
+    }
+    .sinopsis_texto > h3{
+        font-size: 1.3rem;
+        margin-top: 20px;
+    }
+    
+    /* Sección Trailer */
+    .trailer{
+        padding-top: 100px;
+        padding-bottom: 50px;
+        width: 90%;
+        flex-direction: column;
+        column-gap: 0px;
+    }
+    .trailer_container{
+        width:100%;
+    }
+    iframe{
+        width:100%;
+    }
+    .trailer_description{
+        width:100%;
+        margin-top: 15px;
+    }
+    .trailer_info{
+        font-size: 1.2rem;
+        gap:15px;
+    }
+ 
+    /* PÁGINAS REGISTRO Y SESIÓN */
+    .seccion_registro{
+        width: 90%;
+    }    
+    .seccion_registro form{
+        width:80%;
+        margin: auto;
+        text-align: center;
+    }
+    [type="text"], [type="email"], [type="password"],[type="date"] {
+        height: 35px;
+        font-size: 1rem;
+    }
+    #pais{
+        height: 35px;
+        font-size: 1rem;
+    }
+    .form-check{
+        display:flex;
+        gap: 20px;
+        font-size: 1rem;
+        margin: 15px 0px 30px;
+    }
+    
+    /* PÁGINA INICIAR SESIÓN */
+    .seccion_sesion{
+        height: 85vh;
+    }
+}
+
+@media (max-width: 768px) {
+/* PÁGINA INDEX Y MARIO BROS */
+/* HEADER Y FOOTER */
+/* Header */
+.header_index{
+   height: initial;
+}
+.menu{
+    flex-direction: column;
+    width:100%;
+    row-gap: 10px;
+}
+.menu_list{
+    gap: 0px;
+    width:100%;
+    margin:15px 0;
+    justify-content: space-around;
+}
+.menu_list_item, .footer_nav li{
+    font-size:1rem;
+    font-weight: 100;
+    padding: 5px 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+footer{
+    padding:15px;
+}
+.footer_nav{
+        flex-direction: column;
+        gap: 0px;
+}
+.flecha{
+    bottom: 15px;
+    right: 15px;
+}
+
+/* Títulos */
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+
+/* PÁGINA INDEX */
+/* Sección Banner */
+.banner_container{
+    width: 90%;
+}
+.banner_container h1 {
+    margin-bottom: 20px;
+}
+.banner_container h2{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.banner_container button{
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 10px 25px;
+}
+
+/* Sección Buscador */
+.buscador{
+    padding: 50px 0;
+}
+.buscador h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}   
+#buscar{
+    margin: 15px 0px;
+    padding: 0 20px;
+    width: 300px;
+    font-size: 1rem;
+    height: 40px;
+}
+.buscador_form_boton{
+    margin: 0;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 1rem;
+}
+
+/* PÁGINA MARIOBROS */
+/* Sección Sinopsis */
+/* PÁGINA MARIOBROS */
+/* Sección Sinopsis */
+.sinopsis{
+     height: initial;
+    padding: 20px 0;
+}
+.sinopsis_container{
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    column-gap: 20px;
+}
+.sinopsis_imagen{
+    width: 50%;
+}
+.sinopsis_texto > h3{
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+.sinopsis_creditos{
+    flex-direction: column;
+}
+.creditos_rol{
+    padding-bottom:20px;
+}
+
+/* Sección Trailer */
+.trailer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 90%;
+    flex-direction: column;
+    column-gap: 0px;
+}   
+.trailer_container{
+    width:100%;
+}
+.trailer_container h3{
+    font-size: 1.5rem;
+}
+ iframe{
+    width:100%;
+}
+.trailer_description{
+    width:100%;
+    margin-top: 15px;
+}
+.trailer_info{
+    font-size: 1.2rem;
+    gap:15px;
+}
+
+/* PÁGINAS REGISTRO Y SESIÓN */
+.seccion_registro{
+    width: 90%;
+    height: 85vh;
+}    
+.seccion_registro form{
+    width:80%;
+    margin: auto;
+    text-align: center;
+}
+[type="text"], [type="email"], [type="password"],[type="date"] {
+    height: 35px;
+    font-size: 1rem;
+}
+#pais{
+    height: 35px;
+    font-size: 1rem;
+}
+.form-check{
+    display:flex;
+    gap: 20px;
+    font-size: 1rem;
+    margin: 15px 0px 30px;
+}
+.boton_registro{
+    padding: .5rem;
+}
+    
+/* PÁGINA INICIAR SESIÓN */
+.seccion_sesion{
+    height: 85vh;
+}
+}
+
+@media (max-width:575px) {
+    /* PÁGINA ÍNDEX Y MARIOBROS ÍNDEX */
+    /* Header */
+.menu{
+    padding:0;
+    margin:0;
+}
+/* Títulos */
+h1{
+font-size: 2.3rem;
+}
+h2{
+     font-size: 1.3rem;
+}
+     
+/* PÁGINA INDEX */
+/* Sección Buscador */
+.buscador{
+    padding: 50px 0;
+}
+#buscar{
+    margin: 10px 0px;
+    padding: 0 10px;
+    width: 250px;
+}
+.buscador_form_boton{
+    padding: 0 10px;
+}
+     
+/* PÁGINA MARIOBROS */
+/* Sección Sinopsis */
+/* PÁGINA MARIOBROS */
+/* Sección Sinopsis */
+.sinopsis{
+    height: initial;
+    padding: 20px 0;
+}
+.sinopsis_container{
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    column-gap: 20px;
+}
+.sinopsis_imagen{
+    width: 50%;
+}
+.sinopsis_texto > h3{
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+.sinopsis_creditos{
+    flex-direction: column;
+}
+.creditos_rol{
+    padding-bottom:20px;
+}
+         
+/* Sección Trailer */
+.trailer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 90%;
+    flex-direction: column;
+    column-gap: 0px;
+}
+.trailer_container{
+    width:100%;
+}
+.trailer_container h3{
+    font-size: 1.5rem;
+}
+iframe{
+    width:100%;
+}
+.trailer_description{
+    width:100%;
+    margin-top: 15px;
+}
+.trailer_info{
+    font-size: 1.2rem;
+    gap:15px;
+}
+     
+/* PÁGINAS REGISTRO Y SESIÓN */
+.seccion_registro{
+    width: 90%;
+}    
+.seccion_registro form{
+             width:95%;
+}
+.form-check{
+    gap: 10px;
+}
+.form-check-label{
+    font-size: 0.8rem;
+}
+}
+
+
+
+
+
+
+
+

@@ -625,7 +625,7 @@ footer {
 .menu_list{
     gap: 0px;
     width:100%;
-    margin:15px 0;
+    margin:10px 0;
     justify-content: space-around;
 }
 .menu_list_item, .footer_nav li{
@@ -698,8 +698,6 @@ h2{
     font-size: 1rem;
 }
 
-/* PÁGINA MARIOBROS */
-/* Sección Sinopsis */
 /* PÁGINA MARIOBROS */
 /* Sección Sinopsis */
 .sinopsis{
@@ -814,9 +812,7 @@ h2{
 .buscador_form_boton{
     padding: 0 10px;
 }
-     
-/* PÁGINA MARIOBROS */
-/* Sección Sinopsis */
+
 /* PÁGINA MARIOBROS */
 /* Sección Sinopsis */
 .sinopsis{
@@ -881,6 +877,17 @@ iframe{
 }
 .form-check-label{
     font-size: 0.8rem;
+}
+.seccion_sesion{
+    height: 85vh;
+    padding: 0px;
+}
+}
+
+@media (max-width:412px){
+/* HEADER INICIO Y MARIOBROSS */
+.menu_list_item, .footer_nav li{
+padding: 5px 10px;
 }
 }
 

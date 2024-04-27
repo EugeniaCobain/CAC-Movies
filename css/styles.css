@@ -74,7 +74,6 @@ body{
 .menu_list{
     display: flex;
     gap: 25px;
-    background-color: ;
 }
 .menu_list_item, .footer_nav li{
     font-size:1.2rem;
@@ -751,6 +750,9 @@ h2{
 }
 
 /* PÁGINAS REGISTRO Y SESIÓN */
+.header_registro{
+    padding: 20px;
+}
 .seccion_registro{
     width: 90%;
     height: 85vh;

@@ -27,11 +27,28 @@
 
     <main class="main_registro">
         <section data-aos="zoom-in" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="seccion_registro seccion_sesion" >
-            <form action="" method="get">
+            
+            <!-- FORMULARIO -->
+            <form action="" method="get" data-form="inicio-sesion">
                 <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
-                <input type="email" placeholder="Email" id="email" name="email">
-                <input type="password" placeholder="Contraseña" id="password" name="password">
+
+                <!-- EMAIL -->
+                <fieldset>
+                    <input type="email" placeholder="Email" id="email" name="email" minlength="5" required>
+                    <span class="mensaje_error"></span>
+                </fieldset>
+                
+
+                <!-- CONTRASEÑA -->
+                <fieldset>
+                    <input type="password" placeholder="Contraseña" id="password" name="password" minlength="8" maxlength="12" required>
+                    <span class="mensaje_error"></span>
+                </fieldset>
+                
+
+                <!-- BOTÓN ENVIAR -->
                 <button type="submit" class="boton_registro">Iniciar sesión</button>
+
                 <a class="ayuda" href="./registro.html">Registrarse</a>
                 </div>
             </form>
@@ -45,5 +62,7 @@
     <script>
         AOS.init();
     </script>
+
+    <script src="../js/main.js" type="module"></script>
 </body>
 </html>

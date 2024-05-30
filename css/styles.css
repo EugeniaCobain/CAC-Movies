@@ -209,13 +209,16 @@ footer {
     text-align: center;
     margin-top: 10px;
 }
+
 .tendencia_gallery{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 60px;
     margin-top: 50px;
+    overflow-block:hidden;
 }
+
 .tendencia_img{
         width: 250px;
         height: 350px;
@@ -224,10 +227,11 @@ footer {
         overflow:hidden;
         transition: all 0.5s ease-out;
 }
+
 .tendencia_titulo{
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    width: 250px;
+    width: 245px;
     height: 350px;
     position: absolute;
     top: 0;
@@ -252,7 +256,7 @@ footer {
     transform: scale(.8);   
 }
 .tendencia_img:hover>.tendencia_titulo{
-    backdrop-filter: blur(8px);  
+    backdrop-filter: blur(10px);  
     opacity:1;
 }
 .tendencia_boton{
@@ -426,7 +430,8 @@ footer {
 }
 [type="text"], [type="email"], [type="password"],[type="date"] {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     height: 40px;
     padding: 0px 20px;
     font-size: 1.2rem;
@@ -438,6 +443,7 @@ footer {
 #pais{
     width: 100%;
     margin-bottom: 10px;
+    margin-top: 10px;
     height: 40px;
     padding: 0px 20px;
     font-size: 1.2rem;
@@ -455,9 +461,11 @@ footer {
 #flexCheckDefault{
     width: 20px;
 }
+
 .boton_registro{
     width: 100%;
     margin-bottom: 20px;
+    margin-top: 10px;
     padding: 0px 20px;
     background-color: #9f3647;
     border: 2px solid #9f3647;
@@ -477,6 +485,15 @@ footer {
     text-decoration: none;
     color: #787878;
     font-weight: 400;
+}
+
+.mensaje_error{
+    background-color: #9f3647;
+    border-radius: 20px;
+    padding:.8rem;
+    display: none;
+    font-size: 0.8rem;
+    width: auto;
 }
 
 /* PÁGINA INICIAR SESIÓN */
@@ -581,15 +598,11 @@ footer {
  
     /* PÁGINAS REGISTRO Y SESIÓN */
     .seccion_registro{
-        width: 90%;
+        width: 70%;
     }    
-    .seccion_registro form{
-        width:80%;
-        margin: auto;
-        text-align: center;
-    }
+    
     [type="text"], [type="email"], [type="password"],[type="date"] {
-        height: 35px;
+        height: 40px;
         font-size: 1rem;
     }
     #pais{
@@ -601,6 +614,10 @@ footer {
         gap: 20px;
         font-size: 1rem;
         margin: 15px 0px 30px;
+    }
+
+    .mensaje_error{
+        padding:.5rem;
     }
     
     /* PÁGINA INICIAR SESIÓN */
@@ -755,10 +772,9 @@ h2{
 }
 .seccion_registro{
     width: 90%;
-    height: 85vh;
 }    
 .seccion_registro form{
-    width:80%;
+    width:90%;
     margin: auto;
     text-align: center;
 }
@@ -884,6 +900,11 @@ iframe{
     height: 85vh;
     padding: 0px;
 }
+
+.mensaje_error{
+    padding:.5rem;
+}
+
 }
 
 @media (max-width:412px){

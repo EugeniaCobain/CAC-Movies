@@ -27,7 +27,7 @@
             <ul class="menu_list" >
                 <li class="menu_list_item"><a href="#tendencias">Tendencias</a></li>
                 <li class="menu_list_item"><a href="./pages/registro.html">Registrarse</a></li>
-                <li class="menu_list_item destacado"><a href="./pages/sesion.html">Iniciar Sesión</a></li>
+                <li class="menu_list_item destacado"><a href="./pages/sesion.html" id="linkInicioSesion">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
@@ -60,99 +60,11 @@
         <section data-aos="fade-up" data-aos-offset="300"
         data-aos-easing="ease-in-sine" id="tendencias" class="tendencia">
             <h2>Las tendencias de hoy</h2>
-            <div class="tendencia_gallery">
-                <a href="./pages/mariobros.html">
-                    <div class="tendencia_img"> 
-                        <img  src="./assets/img/tendencia/tendencia1.jpg" alt="No way up" loading="lazy">
-                        <div class="tendencia_titulo">
-                            <h4>No way up</h4>
-                        </div>
-                    </div>
-                </a>
-                <a href="./pages/mariobros.html">
-                    <div class="tendencia_img"> 
-                        <img  src="./assets/img/tendencia/tendencia2.jpg" alt="Gozilla Kong" loading="lazy">
-                        <div class="tendencia_titulo">
-                            <h4>Gozilla Kong: The New Empire</h4>
-                        </div>
-                    </div>
-                </a>
-                <a href="./pages/mariobros.html">
-                    <div class="tendencia_img"> 
-                        <img  src="./assets/img/tendencia/tendencia3.jpg" alt="Kung Fu Panda 4" loading="lazy">
-                        <div class="tendencia_titulo">
-                            <h4>Kung Fu Panda 4</h4>
-                        </div>
-                    </div>
-                </a>
-                <a href="./pages/mariobros.html">
-                    <div class="tendencia_img"> 
-                        <img  src="./assets/img/tendencia/tendencia4.jpg" alt="Dune" loading="lazy">
-                        <div class="tendencia_titulo">
-                            <h4>Dune</h4>
-                        </div>
-                    </div>
-                </a>
-                <a href="./pages/mariobros.html">
-                    <div class="tendencia_img"> 
-                        <img  src="./assets/img/tendencia/tendencia5.jpg" alt="Rebel Moon Part 2" loading="lazy">
-                        <div class="tendencia_titulo">
-                            <h4>Rebel Moon Part 2: : The Scargiver </h4>
-                        </div>
-                    </div>
-                </a>
-                <a href="./pages/mariobros.html">
-                    <div class="tendencia_img"> 
-                        <img  src="./assets/img/tendencia/tendencia6.jpg" alt="The Three Musketeers" loading="lazy">
-                        <div class="tendencia_titulo">
-                            <h4>The Three Musketeers</h4>
-                        </div>
-                    </div>
-                </a>
-                <a href="./pages/mariobros.html">
-                    <div class="tendencia_img"> 
-                        <img  src="./assets/img/tendencia/tendencia7.jpg" alt="Inmaculate" loading="lazy">
-                        <div class="tendencia_titulo">
-                            <h4>Inmaculate </h4>
-                        </div>
-                    </div>
-                </a>
-                <a href="./pages/mariobros.html">
-                    <div class="tendencia_img"> 
-                        <img  src="./assets/img/tendencia/tendencia8.jpg" alt="Damaged" loading="lazy">
-                        <div class="tendencia_titulo">
-                            <h4>Damaged</h4>
-                        </div>
-                    </div>
-                </a>
-                <a href="./pages/mariobros.html">
-                    <div class="tendencia_img"> 
-                        <img  src="./assets/img/tendencia/tendencia9.jpg" alt="Breathe" loading="lazy">
-                        <div class="tendencia_titulo">
-                            <h4>Breathe</h4>
-                        </div>
-                    </div>
-                </a>
-                <a href="./pages/mariobros.html">
-                    <div class="tendencia_img"> 
-                        <img  src="./assets/img/tendencia/tendencia10.jpg" alt="Migration" loading="lazy">
-                        <div class="tendencia_titulo">
-                            <h4>Migration</h4>
-                        </div>
-                    </div>
-                </a>
-                <a href="./pages/mariobros.html">
-                    <div class="tendencia_img"> 
-                        <img  src="./assets/img/tendencia/tendencia11.jpg" alt="Alienoid" loading="lazy">
-                        <div class="tendencia_titulo">
-                            <h4>Alienoid</h4>
-                        </div>
-                    </div>
-                </a>
-                
+            <div class="tendencia_gallery" data-tendencia>
+                <!-- RENDERIZACIÓN A PARTIR DE JS -->
             </div>
-            <button class="tendencia_boton">Anterior</button>  
-            <button class="tendencia_boton">Siguiente</button>
+            <button id="anterior" class="tendencia_boton">Anterior</button>  
+            <button id="siguiente" class="tendencia_boton">Siguiente</button>
         </section>
 
         <hr>
@@ -160,31 +72,8 @@
         <section data-aos="fade-up" data-aos-offset="300"
         data-aos-easing="ease-in-sine" class="aclamadas" >
             <h2>Las más aclamadas</h2>
-             <div class="aclamadas_gallery">
-                <div >
-                    <img  src="./assets/img/aclamadas/aclamada1.jpg" alt="aclamada_1" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamadas/aclamada2.jpg" alt="aclamada_1" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamadas/aclamada3.jpg" alt="aclamada_1" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamadas/aclamada4.jpg" alt="aclamada_1" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamadas/aclamada5.jpg" alt="aclamada_1" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamadas/aclamada6.jpg" alt="aclamada_1" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamadas/aclamada7.jpg" alt="aclamada_1" loading="lazy">
-                </div>
-                <div >
-                    <img  src="./assets/img/aclamadas/aclamada8.jpg" alt="aclamada_1" loading="lazy">
-                </div>
+             <div class="aclamadas_gallery" data-aclamadas>
+                 <!-- RENDERIZACIÓN A PARTIR DE JS -->
             </div>
         </section>
     </main>
@@ -208,6 +97,10 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- MIS ARCHIVOS JS -->
+    <script src="./js/api.js"></script>
+    <script src="./js/main.js" type="module"></script>
 
 </body>
 </html>
